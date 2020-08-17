@@ -1,0 +1,174 @@
+/* Foodle styles */
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Nav */
+.foodle--header-brand {
+	margin: 0;
+	padding: 0 12px;
+}
+
+.foodle--header-nav {
+	padding: 15px 0;
+}
+
+.foodle--nav a.nav-link {
+	color: #ffffff;
+	position: relative;
+	font-weight: 700;
+}
+
+.foodle--nav a.nav-link:hover::before {
+	content: '';
+	position: absolute;
+	width: 70%;
+	height: 1px;
+	background: #ffffff;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.foodle--nav a.nav-link.active::before {
+	content: '';
+	position: absolute;
+	width: 70%;
+	height: 1px;
+	background: #ffffff;
+	bottom: 5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* Search form */
+.foodle--search-form {
+	padding-right: 15px;
+}
+
+.foodle--search-form span {
+	color: #ffffff;
+	font-weight: 700;
+}
+
+.foodle--search-form input {
+	margin: 0 8px;
+	border-radius: 15px;
+	padding: 3px 15px;
+	font-size: 0.7rem;
+	height: initial;
+}
+
+.foodle--search-form input::placeholder {
+	font-style: italic;
+	text-align: center;
+}
+
+.foodle--search-form button[type="submit"] {
+	font-size: 0.7rem;
+	padding: 2.5px;
+}
+
+.foodle--social-links {
+	list-style-type: none;
+}
+
+.foodle--social-links a.social-link {
+	color: white;
+	padding: 0 6px;
+}
+
+/* Profile */
+.foodle--profile-page {
+	padding: 20px 0;
+}
+
+.foodle--profile-data .profile-picture img {
+	width: 150px;
+	height: auto;
+	border: 1px solid #000000;
+}
+
+.foodle--profile-data .profile-data {
+	padding: 0 15px;
+}
+
+.foodle--profile-data .profile-data .meta-info {
+	font-size: 0.8rem;
+}
+
+.foodle--profile-description {
+	padding: 30px 5px; 
+	font-size: 0.9rem;
+}
+
+/* Sidebar */
+.foodle--sidebar {
+	font-size: 0.75rem;
+	padding: 15px 0;
+}
+
+.foodle--sidebar .sidebar-filter:first-of-type {
+	margin-top: 0;
+}
+
+.foodle--sidebar .sidebar-filter {
+	padding: 15px;
+	margin: 20px 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+.foodle--sidebar .min-max-input {
+	width: 50%;
+	display: inline-block;
+	font-size: 0.7rem;
+}
+
+.foodle--sidebar .filter-container {
+	margin: 10px 0;
+}
+
+.foodle--sidebar .sort-filter {
+	margin: 0;
+}
+
+.foodle--sidebar .sort-filter li {
+	padding: 3px 0;
+}
+
+.foodle--sidebar .filter-go-button {
+	border: 1px solid #000000;
+	padding: 0 10px;
+}
+
+/* CONTENT HOME */
+.container-fluid .page-content {
+	padding: 15px;
+}
+
+/* POST CONTENT */
+.foodle--post {}
+
+.foodle--post .profile-picture {
+	margin: 5px 0;
+	background-size: cover;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.foodle--post .foodle--post-content {
+	background-color: #dfdfdf;
+}
+
+.foodle--post .foodle--post-content .row {
+	padding: 5px;
+}
+
+.foodle--post .foodle--post-content .post-image {
+	background-size: cover;
+	background-position: center;
+	height: 150px;
+}
