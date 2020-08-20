@@ -171,4 +171,12 @@ html {
 	background-size: cover;
 	background-position: center;
 	height: 150px;
+
 }
+.container{
+	padding: 40px 0;
+}
+.imgupload input{
+	padding: 10px;
+}
+
