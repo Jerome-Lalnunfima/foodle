@@ -20,6 +20,7 @@
 						<div class="row">
 							<div class="col">
 								<strong>Rs. <?php echo $post['price']; ?>\-</strong>
+								<a class="btn btn-sm btn-danger ml-3">View Item</a>
 							</div>
 						</div>
 					</div>
