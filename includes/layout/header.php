@@ -49,10 +49,10 @@
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/login.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
+        						<a href="http://localhost/foodle/foodle/signup.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
                                     <i class="fa fa-user"></i>
                                     &nbsp;
-                                    Login
+                                    Login/Sign up
                                 </a>
         					</li>
         					<li class="nav-item">

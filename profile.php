@@ -25,6 +25,9 @@ include_once "./includes/layout/header.php";
 					<i class="fa fa-envelope"></i>
 					<a href="mailto:lallyi@gmail.com">lallyi@gmail.com</a>
 				</div>
+						<div class="btn btn-sm btn-light filter-go-button">
+					<a href="http://localhost/foodle/foodle/post.php">Edit Profile
+						</a></div>
 			</div>
 		</div>
 	</div>

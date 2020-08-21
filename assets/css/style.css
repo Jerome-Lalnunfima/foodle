@@ -179,4 +179,19 @@ html {
 .imgupload input{
 	padding: 10px;
 }
+.loginpage h1{
+	font-style: italic;
+	font-size: 17px;	
+	position: relative;
+	left: 280px;
+	bottom: 65px;
+}
+.signuppage h1{
+	font-style: italic;
+	font-size: 17px;	
+	position: relative;
+	left: 260px;
+	bottom: 65px;
+
+}
 
