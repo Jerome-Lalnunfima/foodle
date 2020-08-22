@@ -26,7 +26,7 @@ include_once "./includes/layout/header.php";
 					<a href="mailto:lallyi@gmail.com">lallyi@gmail.com</a>
 				</div>
 						<div class="btn btn-sm btn-light">
-					<a href="http://localhost/foodle/foodle/editprofile.php">Edit Profile
+					<a href="/editprofile.php">Edit Profile
 						</a></div>
 			</div>
 		</div>

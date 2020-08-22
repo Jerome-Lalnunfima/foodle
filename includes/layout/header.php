@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="http://localhost/foodle/foodle/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body class="container-fluid">
     <div class="row bg-danger foodle--header-nav">
     	<div class="col">
     		<div class="foodle--header-brand d-flex justify-content-between">
-                <a href="http://localhost/foodle/foodle"><img width="130" height="90"  src="http://localhost/foodle/foodle/assets/images/foodle_logo.png">
+                <a href="/"><img width="130" height="90"  src="/assets/images/foodle_logo.png">
                 </a>
 
                 <ul class="foodle--social-links d-flex justify-content-between">
@@ -42,42 +42,42 @@
                     <div class="d-flex justify-content-between">
         				<ul class="nav foodle--nav">
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/" class="nav-link <?php echo isActiveLink("/"); ?>">
+        						<a href="/" class="nav-link <?php echo isActiveLink("/"); ?>">
                                     <i class="fa fa-home"></i>
                                     &nbsp;
                                     Home
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/signup.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
+        						<a href="/signup.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
                                     <i class="fa fa-user"></i>
                                     &nbsp;
                                     Login/Sign up
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
+        						<a href="/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
                                     <i class="fa fa-address-card"></i>
                                     &nbsp;
                                     Profile
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/post.php" class="nav-link <?php echo isActiveLink("/post.php"); ?>">
+        						<a href="/post.php" class="nav-link <?php echo isActiveLink("/post.php"); ?>">
                                     <i class="fa fa-upload"></i>
                                     &nbsp;
                                     Post
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/contactus.php" class="nav-link <?php echo isActiveLink("/contactus.php"); ?>">
+        						<a href="/contactus.php" class="nav-link <?php echo isActiveLink("/contactus.php"); ?>">
                                     <i class="fa fa-phone"></i>
                                     &nbsp;
                                     Contact Us
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="http://localhost/foodle/foodle/aboutus.php" class="nav-link <?php echo isActiveLink("/about-us.php"); ?>">
+        						<a href="/aboutus.php" class="nav-link <?php echo isActiveLink("/about-us.php"); ?>">
                                     <i class="fa fa-info"></i>
                                     &nbsp;
                                     About Us

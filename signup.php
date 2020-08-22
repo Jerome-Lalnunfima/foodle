@@ -24,7 +24,7 @@ include_once "./includes/layout/header.php";
 
 </div>
 <div class="loginpage">
-<h1 >Already have an account? <a href="http://localhost/foodle/foodle/login.php">Log in</a>
+<h1 >Already have an account? <a href="/login.php">Log in</a>
 </h1>	
 
 </div>

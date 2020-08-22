@@ -16,7 +16,7 @@ include_once "./includes/layout/header.php";
   <button type="submit" class="btn btn-primary">Login</button>
 </div>
 <div class="signuppage">
-<h1 >Does not have an account? <a href="http://localhost/foodle/foodle/signup.php">Sign Up</a>
+<h1 >Does not have an account? <a href="/signup.php">Sign Up</a>
 </h1> 
 
 </div>
