@@ -48,13 +48,23 @@
                                     Home
                                 </a>
         					</li>
-        					<li class="nav-item">
-        						<a href="/signup.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
-                                    <i class="fa fa-user"></i>
-                                    &nbsp;
-                                    Login/Sign up
-                                </a>
-        					</li>
+                            <?php if (!isAuth()): ?>
+                                <li class="nav-item">
+                                    <a href="/signup.php" class="nav-link <?php echo isActiveLink("/login.php"); ?>">
+                                        <i class="fa fa-user"></i>
+                                        &nbsp;
+                                        Login/Sign up
+                                    </a>
+                                </li>
+                            <?php else: ?>
+                                <li class="nav-item">
+                                    <a href="/logout.php" class="nav-link">
+                                        <i class="fa fa-user"></i>
+                                        &nbsp;
+                                        Logout
+                                    </a>
+                                </li>
+                            <?php endif; ?>
         					<li class="nav-item">
         						<a href="/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
                                     <i class="fa fa-address-card"></i>

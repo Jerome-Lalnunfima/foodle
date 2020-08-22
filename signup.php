@@ -1,4 +1,8 @@
 <?php
+include_once "./includes/helper.php";
+if (isAuth()) {
+    header("Location: /");
+}
 include_once "./includes/layout/header.php";
 ?>
 <div class="container">
