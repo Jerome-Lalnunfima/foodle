@@ -65,20 +65,24 @@
                                     </a>
                                 </li>
                             <?php endif; ?>
-        					<li class="nav-item">
-        						<a href="/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
-                                    <i class="fa fa-address-card"></i>
-                                    &nbsp;
-                                    Profile
-                                </a>
-        					</li>
-        					<li class="nav-item">
-        						<a href="/post.php" class="nav-link <?php echo isActiveLink("/post.php"); ?>">
-                                    <i class="fa fa-upload"></i>
-                                    &nbsp;
-                                    Post
-                                </a>
-        					</li>
+                            <?php if (isAuth()): ?>
+                                <li class="nav-item">
+                                    <a href="/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
+                                        <i class="fa fa-address-card"></i>
+                                        &nbsp;
+                                        Profile
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (isAuth()): ?>
+                                <li class="nav-item">
+                                    <a href="/post.php" class="nav-link <?php echo isActiveLink("/post.php"); ?>">
+                                        <i class="fa fa-upload"></i>
+                                        &nbsp;
+                                        Post
+                                    </a>
+                                </li>
+                            <?php endif; ?>
         					<li class="nav-item">
         						<a href="/contactus.php" class="nav-link <?php echo isActiveLink("/contactus.php"); ?>">
                                     <i class="fa fa-phone"></i>
