@@ -1,4 +1,6 @@
 <?php
+$title = explode('/', $_SERVER['SCRIPT_NAME']);
+$title = end($title);
 session_start();
 include_once "./includes/helper.php";
 
@@ -28,10 +30,10 @@ include_once "./includes/layout/header.php";
   </div>
   
   <button type="submit" name="submit" class="btn btn-primary">Login</button>
+    <span class="ml-2 d-inline-block">
+        Do not have an account? <a href="/login.php">Sign up</a>
+    </span>
 </div>
-<div class="signuppage">
-<h1 >Does not have an account? <a href="/signup.php">Sign Up</a>
-</h1> 
 
 </div>
 

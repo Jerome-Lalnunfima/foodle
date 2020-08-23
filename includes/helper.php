@@ -17,3 +17,10 @@ function isAuth() {
     return false;
 }
 
+function flash($name) {
+    $n = $_SESSION[$name];
+
+    $_SESSION[$name] = null;
+
+    return $n;
+}

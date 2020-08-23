@@ -106,6 +106,8 @@ html {
 .foodle--sidebar {
 	font-size: 0.75rem;
 	padding: 15px 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
 }
 
 .foodle--sidebar .sidebar-filter:first-of-type {
@@ -113,10 +115,7 @@ html {
 }
 
 .foodle--sidebar .sidebar-filter {
-	padding: 15px;
-	margin: 20px 0;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 15px;
+	padding: 10px 15px;
 }
 
 .foodle--sidebar .min-max-input {
@@ -127,14 +126,6 @@ html {
 
 .foodle--sidebar .filter-container {
 	margin: 10px 0;
-}
-
-.foodle--sidebar .sort-filter {
-	margin: 0;
-}
-
-.foodle--sidebar .sort-filter li {
-	padding: 3px 0;
 }
 
 .foodle--sidebar .filter-go-button {
@@ -168,7 +159,8 @@ html {
 }
 
 .foodle--post .foodle--post-content .post-image {
-	background-size: cover;
+	background-size: contain;
+    background-repeat: no-repeat;
 	background-position: center;
 	height: 150px;
 
@@ -178,13 +170,6 @@ html {
 }
 .imgupload input{
 	padding: 10px;
-}
-.loginpage h1{
-	font-style: italic;
-	font-size: 17px;	
-	position: relative;
-	left: 280px;
-	bottom: 65px;
 }
 .signuppage h1{
 	font-style: italic;

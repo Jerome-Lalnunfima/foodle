@@ -1,36 +1,16 @@
 <?php
+$title = explode('/', $_SERVER['SCRIPT_NAME']);
+$title = end($title);
 include_once "./includes/layout/header.php";
 ?>
 <div class="container">
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Name</label>
-    <input name="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter your name">
-    
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Email</label>
-    <input name="email" type="number" class="form-control" id="email" placeholder="email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <h2 class="mb-4">You can reach us here:</h2>
 
-  </div>
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Message</label>
-    <textarea name="product_description" class="form-control" id="Message" rows="3"></textarea>
-  </div>
-
-  
-
-	<button type="send" class="btn btn-primary">Send</button>
-
-
-</form>
+    <h5>Armed Veng, Aizawl</h5>
+    <h5>Mizoram, 796001</h5>
+    <h5>Email Us: <a href="mailto:customer@foodle.com">customer@foodle.com</a></h5>
+    <h5>Call Us: <a href="tel:1234567890">1234567890</a></h5>
 </div>
-
-
-
-
-
 <?php
 include_once "./includes/layout/footer.php";
 ?>

@@ -3,9 +3,8 @@ create table posts (
 	price int,
 	title varchar(255),
 	description text,
-	first_image_path varchar(255),
-	second_image_path varchar(255),
-	third_image_path varchar(255),
+    image_path varchar(255),
+    user_id int,
 	PRIMARY KEY ( id )
 );
 

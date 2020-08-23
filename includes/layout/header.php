@@ -56,18 +56,10 @@
                                         Login/Sign up
                                     </a>
                                 </li>
-                            <?php else: ?>
-                                <li class="nav-item">
-                                    <a href="/logout.php" class="nav-link">
-                                        <i class="fa fa-user"></i>
-                                        &nbsp;
-                                        Logout
-                                    </a>
-                                </li>
                             <?php endif; ?>
                             <?php if (isAuth()): ?>
                                 <li class="nav-item">
-                                    <a href="/profile.php" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
+                                    <a href="/profile.php?user_id=<?php echo $_SESSION['user']['id']; ?>" class="nav-link <?php echo isActiveLink("/profile.php"); ?>">
                                         <i class="fa fa-address-card"></i>
                                         &nbsp;
                                         Profile
@@ -91,14 +83,23 @@
                                 </a>
         					</li>
         					<li class="nav-item">
-        						<a href="/aboutus.php" class="nav-link <?php echo isActiveLink("/about-us.php"); ?>">
+        						<a href="/aboutus.php" class="nav-link <?php echo isActiveLink("/aboutus.php"); ?>">
                                     <i class="fa fa-info"></i>
                                     &nbsp;
                                     About Us
                                 </a>
         					</li>
+                            <?php if (isAuth()): ?>
+                                <li class="nav-item">
+                                    <a href="/logout.php" class="nav-link">
+                                        <i class="fa fa-user"></i>
+                                        &nbsp;
+                                        Logout
+                                    </a>
+                                </li>
+                            <?php endif; ?>
         				</ul>
-                        <form action="" method="GET" class="d-flex justify-content-center align-items-center foodle--search-form">
+                        <form action="../../search.php" method="GET" class="d-flex justify-content-center align-items-center foodle--search-form">
                             <span>Search:</span>
                             <input id="search-input" type="text" placeholder="search here" class="form-control" name="q">
                             <button type="submit" class="btn btn-light">Go</button>

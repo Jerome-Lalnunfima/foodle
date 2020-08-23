@@ -1,4 +1,6 @@
 <?php
+$title = explode('/', $_SERVER['SCRIPT_NAME']);
+$title = end($title);
 include_once "./includes/helper.php";
 if (isAuth()) {
     header("Location: /");
@@ -22,17 +24,14 @@ include_once "./includes/layout/header.php";
   </div>
 
    <button type="submit" name="submit" class="btn btn-primary">Sign up</button>
+    <span class="ml-2 d-inline-block">
+        Already have an account? <a href="/login.php">Log in</a>
+    </span>
 
 
 </form>
 
 </div>
-<div class="loginpage">
-<h1 >Already have an account? <a href="/login.php">Log in</a>
-</h1>	
-
-</div>
-
 
 <?php
 include_once "./includes/layout/footer.php";
