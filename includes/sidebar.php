@@ -1,5 +1,8 @@
 <?php 
-$sort = $_GET['sort'];
+$sort = "";
+if (isset($_GET['sort'])) {
+    $sort = $_GET['sort'];
+}
 ?>
 <form action="/" method="GET" class="col-2 pt-4">
 	<div class="foodle--sidebar">

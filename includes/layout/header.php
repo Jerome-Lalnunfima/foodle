@@ -9,7 +9,8 @@
     <title>
         <?php
             if (isset($title)) {
-                $title = reset(explode('.', $title));
+                $title = explode('.', $title);
+                $title = reset($title);
                 echo ucfirst($title);
             } else {
                 echo "Foodle";

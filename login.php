@@ -1,7 +1,6 @@
 <?php
 $title = explode('/', $_SERVER['SCRIPT_NAME']);
 $title = end($title);
-session_start();
 include_once "./includes/helper.php";
 
 if (isAuth()) {

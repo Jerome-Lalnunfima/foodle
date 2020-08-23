@@ -2,11 +2,15 @@
 include_once "./includes/layout/header.php";
 include_once "./includes/db.php";
 
-$uid = $_SESSION['user']['id'];
+if (isset($_SESSION['user'])) {
+    $uid = $_SESSION['user']['id'];
+}
 
-$sort = $_GET['sort'];
+if (isset($_GET['sort'])) {
+    $sort = $_GET['sort'];
+}
 
-if (isset($sort) || isset($min) || isset($max)) {
+if (isset($sort)) {
     switch ($sort) {
         case "none";
                 $posts = getFromDB("SELECT posts.*, users.username, users.profile_pic_path FROM posts INNER JOIN users ON users.id = posts.user_id ORDER BY posts.id DESC");

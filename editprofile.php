@@ -3,7 +3,6 @@ $title = explode('/', $_SERVER['SCRIPT_NAME']);
 $title = end($title);
 include_once "./includes/layout/header.php";
 
-session_start();
 $user = $_SESSION['user'];
 ?>
 <div class="container">
