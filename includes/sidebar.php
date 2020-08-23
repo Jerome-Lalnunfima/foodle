@@ -1,6 +1,4 @@
 <?php 
-$min = $_GET['min'];
-$max = $_GET['max'];
 $sort = $_GET['sort'];
 ?>
 <form action="/" method="GET" class="col-2 pt-4">
