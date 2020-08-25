@@ -30,7 +30,7 @@ include_once "./includes/layout/header.php";
   
   <button type="submit" name="submit" class="btn btn-primary">Login</button>
     <span class="ml-2 d-inline-block">
-        Do not have an account? <a href="/login.php">Sign up</a>
+        Do not have an account? <a href="/signup.php">Sign up</a>
     </span>
 </div>
 

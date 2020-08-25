@@ -25,7 +25,10 @@ if (isset($sort)) {
 } else {
     $posts = getFromDB("SELECT posts.*, users.username, users.profile_pic_path FROM posts INNER JOIN users ON users.id = posts.user_id ORDER BY posts.id DESC");
 }
-
+if(is_null($posts))
+{
+	$posts=[];
+}
 ?>
 
 <div class="row">
