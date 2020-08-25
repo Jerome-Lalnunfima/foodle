@@ -47,11 +47,13 @@ if (isset($prof_user['profile_pic_path'])) {
 					<i class="fa fa-envelope"></i>
                     <a href="mailto:<?php echo $prof_user['email']; ?>"><?php echo $prof_user['email']; ?></a>
 				</div>
-                <?php if ($uid === $_SESSION['user']['id']): ?>
-                    <div class="btn btn-sm btn-light">
-                        <a href="/editprofile.php">Edit Profile</a>
-                    </div>
-                <?php endif;?>
+                <?php if (array_key_exists("id", $_SESSION['user'])): ?>
+                    <?php if ($uid === $_SESSION['user']['id']): ?>
+                        <div class="btn btn-sm btn-light">
+                            <a href="/editprofile.php">Edit Profile</a>
+                        </div>
+                    <?php endif;?>
+                <?php endif; ?>
 			</div>
 		</div>
 	</div>
